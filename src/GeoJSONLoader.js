@@ -19,7 +19,8 @@ import { constructPolygonMeshObject } from './constructPolygonMeshObject.js';
  *   The "offset" option value is not multiplied by this.
  * @property {boolean} [flat=false] If "true" then any altitude or z-values are ignored.
  * @property {Ellipsoid|null} [ellipsoid=null] The ellipsoid to use to project the generated
- *   geometry onto a globe surface. If no ellipsoid is provided then no projection is done.
+ *   geometry onto a globe surface. If no ellipsoid is provided then no projection is done. The
+ *   class need only be shaped like the one from the 3d-tiles-renderer project.
  * @property {number|null} [resolution=null] The spacing to use when resampling edges. Useful when
  *   projecting a geometry to an ellipsoid surface and more geometry detail is needed for the
  *   curvature. If set to "null" then no resampling is done.
@@ -33,7 +34,8 @@ import { constructPolygonMeshObject } from './constructPolygonMeshObject.js';
  *   The "offset" option value is not multiplied by this.
  * @property {boolean} [flat=false] If "true" then any altitude or z-values are ignored.
  * @property {Ellipsoid|null} [ellipsoid=null] The ellipsoid to use to project the generated
- *   geometry onto a globe surface. If no ellipsoid is provided then no projection is done.
+ *   geometry onto a globe surface. If no ellipsoid is provided then no projection is done. The
+ *   class need only be shaped like the one from the 3d-tiles-renderer project.
  * @property {number|null} [resolution=null] The spacing to use when generating internal points and
  *   edge resampling for triangulation. Useful when projecting a geometry to an ellipsoid surface
  *   and more geometry detail is needed for the curvature. If set to "null" then no resampling
@@ -233,7 +235,7 @@ export class GeoJSONLoader {
 	 */
 	loadAsync( url ) {
 
-		return fetch( url )
+		return fetch( url, this.fetchOptions )
 			.then( res => res.json() )
 			.then( json => this.parse( json ) );
 

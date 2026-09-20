@@ -19,7 +19,7 @@ export class WKTLoader extends GeoJSONLoader {
 	 */
 	loadAsync( url ) {
 
-		return fetch( url )
+		return fetch( url, this.fetchOptions )
 			.then( res => res.text() )
 			.then( json => this.parse( json ) );
 

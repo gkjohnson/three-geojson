@@ -33,6 +33,12 @@ Some key features supported by this project:
 
 [WKT Polygon](https://gkjohnson.github.io/three-geojson/wkt.html)
 
+# Installation
+
+```
+npm install github:@gkjohnson/three-geojson
+```
+
 # Use
 
 ```js
