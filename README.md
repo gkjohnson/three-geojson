@@ -23,15 +23,15 @@ Some key features supported by this project:
 
 # Examples
 
-[WGS84 Lines](https://gkjohnson.github.io/three-geojson/example/bundle/globe.html)
+[WGS84 Lines](https://gkjohnson.github.io/three-geojson/globe.html)
 
-[WGS84 Extruded Polygons](https://gkjohnson.github.io/three-geojson/example/bundle/globe.html?country=.)
+[WGS84 Extruded Polygons](https://gkjohnson.github.io/three-geojson/globe.html?country=.)
 
-[WGS84 Wireframe Polygons](https://gkjohnson.github.io/three-geojson/example/bundle/globe.html?country=.&wireframe=true)
+[WGS84 Wireframe Polygons](https://gkjohnson.github.io/three-geojson/globe.html?country=.&wireframe=true)
 
-[Extruded Polygon](https://gkjohnson.github.io/three-geojson/example/bundle/extruded.html)
+[Extruded Polygon](https://gkjohnson.github.io/three-geojson/extruded.html)
 
-[WKT Polygon](https://gkjohnson.github.io/three-geojson/example/bundle/wkt.html)
+[WKT Polygon](https://gkjohnson.github.io/three-geojson/wkt.html)
 
 # Use
 

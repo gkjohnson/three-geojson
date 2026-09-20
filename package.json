@@ -24,6 +24,8 @@
     "3d-tiles-renderer": "^0.4.9",
     "eslint": "^8.57.1",
     "eslint-config-mdcs": "^5.0.0",
+    "eslint-plugin-jsdoc": "^50.8.0",
+    "jsdoc": "^4.0.5",
     "three": "^0.176.0",
     "vite": "^6.3.5"
   },

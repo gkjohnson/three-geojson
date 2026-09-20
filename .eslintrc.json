@@ -1,4 +1,36 @@
 {
 	"root": true,
-	"extends": "./node_modules/eslint-config-mdcs/index.js"
+	"extends": "./node_modules/eslint-config-mdcs/index.js",
+	"overrides": [
+		{
+			"files": ["**/*.js"],
+			"plugins": ["jsdoc"],
+			"settings": {
+				"jsdoc": {
+					"preferredTypes": {
+						"Any": "any",
+						"Boolean": "boolean",
+						"Number": "number",
+						"object": "Object",
+						"String": "string"
+					},
+					"tagNamePreference": {
+						"return": "returns",
+						"augments": "extends",
+						"classdesc": false
+					}
+				}
+			},
+			"rules": {
+				"jsdoc/check-tag-names": [ "error", { "definedTags": [ "warn", "note", "section" ] } ],
+				"jsdoc/check-types": "error",
+				"jsdoc/no-undefined-types": "error",
+				"jsdoc/require-param-type": "error",
+				"jsdoc/require-returns-type": "error",
+				"jsdoc/require-returns": "off",
+				"jsdoc/require-param-description": "off",
+				"jsdoc/require-returns-description": "off"
+			}
+		}
+	]
 }
