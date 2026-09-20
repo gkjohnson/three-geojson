@@ -1,6 +1,6 @@
 {
   "name": "three-geojson",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Three.js shape loaders for GeoJSON and WKT formats.",
   "type": "module",
   "sideEffects": false,
