@@ -181,7 +181,7 @@ export class GeoJSONLoader {
 
 		return constructLineObject( lines, {
 			...options,
-			groups: [],
+			groups,
 	 	} );
 
 	}
