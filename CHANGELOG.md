@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.0.14] - 2026.09.26
+### Fixed
+- Static GeoJSONLoader.getLineObject not assigning material groups to the merged geometry.
+
 ## [0.0.13] - 2026.09.20
 ### Fixed
 - "fetchOptions" not being passed to fetch when loading a file.
