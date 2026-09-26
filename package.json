@@ -9,8 +9,8 @@
   "scripts": {
     "start": "vite --config ./vite.config.js",
     "build-examples": "vite build --config ./vite.config.js",
-    "lint": "eslint \"src/**.js\" \"example/**.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint \"src/**.js\" \"example/**.js\" \"test/**.js\"",
+    "test": "node --test"
   },
   "author": "Garrett Johnson <garrett.kjohnson@gmail.com>",
   "license": "MIT",
