@@ -43,7 +43,7 @@ body:
     id: screenshots
     attributes:
       label: Screenshots & Data Set
-      description: Provide screenshots of the render problem or logged error and the tile set data that's causing the problem if applicable.
+      description: Provide screenshots of the render problem or logged error and the GeoJSON data that's causing the problem if applicable.
     validations:
       required: false
   - type: input
